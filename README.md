@@ -57,7 +57,7 @@ Inspired by Jane Mount's [Bibliophile](https://www.amazon.com/Bibliophile-Illust
 - [Joshy Woshy](https://www.linkedin.com/in/jdchappelow)
 - [Bill Cook](https://www.linkedin.com/in/bill--cook/)
 
-## Project Management & Contributing
+## Project Management
 - [Trello](https://trello.com/b/0Rkddosh/shopify-pokemon)
 - [DB Schema](https://kitt.lewagon.com/db/75245)
 
