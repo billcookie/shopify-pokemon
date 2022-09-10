@@ -57,6 +57,9 @@ Inspired by Jane Mount's [Bibliophile](https://www.amazon.com/Bibliophile-Illust
 - [Joshy Woshy](https://www.linkedin.com/in/jdchappelow)
 - [Bill Cook](https://www.linkedin.com/in/bill--cook/)
 
+## Project Management & Contributing
+- [Trello](https://trello.com/b/0Rkddosh/shopify-pokemon)
+- [DB Schema](https://kitt.lewagon.com/db/75245)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
