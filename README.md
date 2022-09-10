@@ -4,7 +4,7 @@ A Pokemon card shopify marketplace application.
 
 
 <br>
-App home: https://tokyo-vinyls.herokuapp.com/
+App home: 
    
 
 ## Getting Started
