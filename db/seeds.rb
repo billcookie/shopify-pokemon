@@ -10,6 +10,8 @@ Pokemon.configure do |config|
   config.api_key = "4bce297b-35ce-47c9-aef9-6cabf64fe1b9"
 end
 
+Product.delete_all
+
 
 puts gengar = Pokemon::Card.where(q: 'name:gengar').first
 puts gengar.name
@@ -34,7 +36,9 @@ puts price = gengar.tcgplayer.prices.holofoil.market
 card = Product.create!(
     pkmn_id: gengar.id,
     name: gengar.name,
-    price:,
+    price: price.to_f,
     attacks:,
     image: gengar.images.large
 )
+
+print Product.count
