@@ -54,4 +54,28 @@ Product.create!(
   price:
 )
 
+raichu = Pokemon::Card.where(q: 'name:raichu').first
+price = raichu.tcgplayer.prices.normal.market
+
+Product.create!(
+  pkmn_id: raichu.id,
+  name: raichu.name,
+  abilities: raichu.abilities,
+  attacks: raichu.attacks,
+  image: raichu.images.large,
+  price:
+)
+
+haunter = Pokemon::Card.where(q: 'name:haunter').first
+price = haunter.tcgplayer.prices.first_edition_holofoil.market
+
+Product.create!(
+  pkmn_id: haunter.id,
+  name: haunter.name,
+  abilities: haunter.abilities,
+  attacks: haunter.attacks,
+  image: haunter.images.large,
+  price:
+)
+
 puts "#{Product.count} pokemon cards added to db"
