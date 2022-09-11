@@ -47,7 +47,7 @@ rails db:seed
 
 ```
 rails s (localhost:3000)
-npm run start(localhost:3001) Will ask that Localhost:3000 is in use, so please press y.
+npm run start(localhost:3001) Will ask that Localhost:3000 is in use, so please press y. In Pokemon file (this is the react app)
 ```
 
 ## Built With
