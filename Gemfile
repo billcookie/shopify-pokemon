@@ -58,6 +58,9 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "dotenv-rails"
 
+# MINE
+gem 'pokemon_tcg_sdk'
+
 end
 
 group :development do
