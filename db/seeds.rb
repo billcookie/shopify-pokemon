@@ -37,7 +37,8 @@ card = Product.create!(
     pkmn_id: gengar.id,
     name: gengar.name,
     price: price.to_f,
-    attacks:,
+    abilities: gengar.abilities,
+    attacks: gengar.attacks,
     image: gengar.images.large
 )
 
