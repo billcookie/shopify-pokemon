@@ -54,7 +54,7 @@ Inspired by Jane Mount's [Bibliophile](https://www.amazon.com/Bibliophile-Illust
 
 ## Team Members
 - [Adam Hemming](https://www.linkedin.com/in/adam-hemming/)
-- [Joshua Chappelow](https://www.linkedin.com/in/jdchappelow)
+- [Joshy Woshy](https://www.linkedin.com/in/jdchappelow)
 - [Bill Cook](https://www.linkedin.com/in/bill--cook/)
 
 ## Project Management
