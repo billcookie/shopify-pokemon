@@ -5,3 +5,36 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Pokemon.configure do |config|
+  config.api_key = "4bce297b-35ce-47c9-aef9-6cabf64fe1b9"
+end
+
+
+puts gengar = Pokemon::Card.where(q: 'name:gengar').first
+puts gengar.name
+puts gengar.id
+puts gengar.images.large
+
+gengar.abilities.each do |ability|
+    puts ability.name
+    puts ability.text
+end
+
+attacks = []
+
+gengar.attacks.each do |attack|
+#    attacks << [attack.cost, attack.name, attack.text, attack.damage]
+   attacks << attack
+end
+
+puts price = gengar.tcgplayer.prices.holofoil.market
+
+
+card = Product.create!(
+    pkmn_id: gengar.id,
+    name: gengar.name,
+    price:,
+    attacks:,
+    image: gengar.images.large
+)
