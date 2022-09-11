@@ -46,7 +46,8 @@ rails db:seed
 ### Run a server
 
 ```
-rails s
+rails s (localhost:3000)
+npm run start(localhost:3001) Will ask that Localhost:3000 is in use, so please press y.
 ```
 
 ## Built With
