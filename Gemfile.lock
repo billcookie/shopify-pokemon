@@ -78,6 +78,10 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     bcrypt (3.1.18)
     bindex (0.8.1)
     bootsnap (1.13.0)
@@ -94,6 +98,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
+    connection_pool (2.2.5)
     crass (1.0.6)
     debug (1.6.2)
       irb (>= 1.3.6)
@@ -163,6 +168,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4)
@@ -192,6 +199,12 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    react-rails (2.6.2)
+      babel-transpiler (>= 0.7.0)
+      connection_pool
+      execjs
+      railties (>= 3.2)
+      tilt
     regexp_parser (2.5.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -267,7 +280,9 @@ DEPENDENCIES
   jsbundling-rails
   pg (~> 1.1)
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.3, >= 7.0.3.1)
+  react-rails
   sassc-rails
   selenium-webdriver
   simple_form!
