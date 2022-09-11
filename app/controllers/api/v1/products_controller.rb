@@ -8,5 +8,4 @@ class Api::V1::ProductsController < ActionController::Base
     @product = Product.find(params[:id])
     render json: @product
   end
-
 end
