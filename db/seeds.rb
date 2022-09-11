@@ -13,33 +13,31 @@ end
 Product.delete_all
 
 
-puts gengar = Pokemon::Card.where(q: 'name:gengar').first
-puts gengar.name
-puts gengar.id
-puts gengar.images.large
+# puts gengar.name
+# puts gengar.id
+# puts gengar.images.large
+# abilities = []
 
-gengar.abilities.each do |ability|
-    puts ability.name
-    puts ability.text
-end
+# gengar.abilities.each do |ability|
+#   abilities << [ability.name, ability.text]
+# end
+# attacks = []
 
-attacks = []
-
-gengar.attacks.each do |attack|
+# gengar.attacks.each do |attack|
 #    attacks << [attack.cost, attack.name, attack.text, attack.damage]
-   attacks << attack
-end
+#   #  attacks << attack
+# end
 
-puts price = gengar.tcgplayer.prices.holofoil.market
-
+gengar = Pokemon::Card.where(q: 'name:gengar').first
+price = gengar.tcgplayer.prices.holofoil.market
 
 card = Product.create!(
     pkmn_id: gengar.id,
     name: gengar.name,
-    price: price.to_f,
     abilities: gengar.abilities,
     attacks: gengar.attacks,
-    image: gengar.images.large
+    image: gengar.images.large,
+    price:
 )
 
 print Product.count
