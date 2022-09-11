@@ -28,16 +28,30 @@ Product.delete_all
 #   #  attacks << attack
 # end
 
+puts "clearing db"
+
 gengar = Pokemon::Card.where(q: 'name:gengar').first
 price = gengar.tcgplayer.prices.holofoil.market
 
-card = Product.create!(
-    pkmn_id: gengar.id,
-    name: gengar.name,
-    abilities: gengar.abilities,
-    attacks: gengar.attacks,
-    image: gengar.images.large,
-    price:
+Product.create!(
+  pkmn_id: gengar.id,
+  name: gengar.name,
+  abilities: gengar.abilities,
+  attacks: gengar.attacks,
+  image: gengar.images.large,
+  price:
 )
 
-print Product.count
+charizard = Pokemon::Card.where(q: 'name:charizard').first
+price = charizard.tcgplayer.prices.first_edition_holofoil.market
+
+Product.create!(
+  pkmn_id: charizard.id,
+  name: charizard.name,
+  abilities: charizard.abilities,
+  attacks: charizard.attacks,
+  image: charizard.images.large,
+  price:
+)
+
+puts "#{Product.count} pokemon cards added to db"
