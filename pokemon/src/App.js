@@ -1,11 +1,12 @@
-import './App.css';
+import "./App.css";
 import axios from "axios";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 const API_URL = "http://localhost:3000/api/v1/products";
 
 function getAPIData() {
-  return axios.get(API_URL).then((response) => response.data)
+  return axios.get(API_URL).then((response) => response.data);
 }
 function App() {
   const [products, setProducts] = useState([]);
@@ -16,12 +17,13 @@ function App() {
       if (mounted) {
         setProducts(items);
       }
-  });
-  return () => (mounted = false) ;
-}, []);
+    });
+    return () => (mounted = false);
+  }, []);
   return (
     <div className="App">
       <Products products={products} />
+      <Footer />
     </div>
   );
 }
