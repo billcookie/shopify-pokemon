@@ -46,7 +46,8 @@ rails db:seed
 ### Run a server
 
 ```
-rails s
+rails s (localhost:3000)
+npm run start(localhost:3001) Will ask that Localhost:3000 is in use, so please press y. In Pokemon file (this is the react app)
 ```
 
 ## Built With
@@ -65,7 +66,7 @@ Inspired by Jane Mount's [Bibliophile](https://www.amazon.com/Bibliophile-Illust
 ## Team Members
 
 - [Adam Hemming](https://www.linkedin.com/in/adam-hemming/)
-- [Joshua Chappelow](https://www.linkedin.com/in/jdchappelow)
+- [Joshy Woshy](https://www.linkedin.com/in/jdchappelow)
 - [Bill Cook](https://www.linkedin.com/in/bill--cook/)
 
 ## Project Management

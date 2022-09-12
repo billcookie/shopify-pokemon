@@ -8,6 +8,7 @@ function Products (props){
         return (
         <div key={product.id}>
           <h2>{product.name}</h2>
+          <img alt="card-front-img" src={product.image}/>
         </div>
         );
       })}
